@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script> 
+var out = ""
+var sh_flag = 1;
+var kh_flag = 1;
+var th_flag = 1;
+var gh_flag = 1;
+var str = window.prompt("Enter a word: ");
+if(str != null)
+{
+   // alert("Your name is " + "ع"+"ا");
+   for (var i = 0; i < str.length; i++) {
+   //alert(str.charAt(i));
+   if(str.charAt(i)==" ")
+   {
+       out += " "
+   }
+   else if(str.charAt(i)=="o" && i == 0)
+   {
+       out += "ع"
+    
+   }
+    else if(str.charAt(i)=="o" && i != 0)
+   {
+       out += "و"
+    
+   }
+     else if(str.charAt(i)=="a" && i == 0 && str.charAt(i+1)=="b")
+   {
+       out += "ع"
+    
+   }
+   else if(str.charAt(i)=="m")
+   {
+       out += "م"
+    
+   }
+   else if(str.charAt(i)=="a" && str.charAt(i+1)!="b" && str.charAt(i-1) != "h")
+   {
+       out += "ا"
+   }
+   else if(str.charAt(i)=="b")
+   {
+       out += "ب"
+    
+   }
+ else if(str.charAt(i)=="p")
+   {
+       out += "ب"
+    
+   }
+   else if(str.charAt(i)=="t")
+   {
+        if(str.charAt(i+1)=="h")
+        {
+            out += "ث"
+            
+        }
+        else
+       {
+            out += "ت"
+       }
+    
+   }
+
+   else if(str.charAt(i)=="j")
+   {
+       out += "ج"
+   }
+   else if(str.charAt(i)=="h" && str.charAt(i+1)=="a")
+   {
+       out += "ح"
+   }
+   else if(str.charAt(i)=="k")
+   {
+        if(str.charAt(i+1)=="h")
+        {
+            out += "خ"
+        }
+        else
+        {
+            out += "ك"
+        }
+   }
+   else if(str.charAt(i)=="d")
+   {
+       out += "د"
+   }
+   else if(str.charAt(i)=="z")
+   {
+       out += "ز"
+   }
+   else if(str.charAt(i)=="s")
+   {
+       if(str.charAt(i)=="h")
+        {
+            out += "ش"
+        }
+       else{
+       out += "س"
+       }
+   }
+   else if(str.charAt(i)=="g")
+   {
+       if(str.charAt(i)=="h")
+        {
+            out += "غ"
+        }
+       else{
+       out += "ج"
+       }
+   }
+   else if(str.charAt(i)=="f")
+   {
+       out += "ف"
+   }
+   else if(str.charAt(i)=="l")
+   {
+       out += "ل"
+   }
+   else if(str.charAt(i)=="n")
+   {
+       out += "ن"
+   }
+   else if(str.charAt(i)=="h" && str.charAt(i+1)!="a")
+   {
+       out += "ه"
+   }
+   else if(str.charAt(i)=="w")
+   {
+       out += "و"
+   }
+   else if(str.charAt(i)=="y" || str.charAt(i)=="e" || str.charAt(i)=="i" )
+   {
+       out += "ي"
+   }
+   else if(str.charAt(i)=="u")
+   {
+       out += "و"
+   }
+     else if(str.charAt(i)=="r")
+   {
+       out += "ر"
+   }
+}
+ alert(out)
+}
+
+
+</script>
+
+</head>
+
+<body>
+
+
+</body>
+</html>
+
