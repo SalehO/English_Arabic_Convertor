@@ -9,7 +9,12 @@ var sh_flag = 1;
 var kh_flag = 1;
 var th_flag = 1;
 var gh_flag = 1;
-var str = window.prompt("Enter a word: ");
+var str = "";
+var counter =1;
+function getValue(){
+    str = prompt("Enter any word to be converted : ", "word");
+    str = str.toLowerCase();
+    out = "";
 if(str != null)
 {
    // alert("Your name is " + "ع"+"ا");
@@ -90,6 +95,10 @@ if(str != null)
    {
        out += "د"
    }
+    else if(str.charAt(i)=="c")
+   {
+       out += "ك"
+   }
    else if(str.charAt(i)=="z")
    {
        out += "ز"
@@ -146,18 +155,29 @@ if(str != null)
    {
        out += "ر"
    }
-}
- alert(out)
+
+   }
+
 }
 
 
+var x = document.createElement("div");  // Creates a new <div> node
+x.textContent = counter+ ")  "+str+" is:   " + out + "    in arabic alphabet \n\n"
+counter++;
+document.body.appendChild(x);
+}
 </script>
+
 
 </head>
 
-<body>
-
-
-</body>
+   <body>
+      <p>Click the "Convert" to start converting or "Clear Page" to clear previous conversions.</p>      
+      <form>
+         <input type = "button" value = "Covert" onclick = "getValue();" />
+         <button onclick="location.reload();">Clear Page</button>
+      </form>      
+   </body>
+   
 </html>
 
