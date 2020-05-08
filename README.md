@@ -3,4 +3,4 @@ This simple program converts English words to Arabic. It does not translate, onl
 I made this program to help my friends learn Arabic upon their request.
 
 
-You can also view it using this link: https://eng-arab-convertor.000webhostapp.com/arbic.html?
+You can also view it using this link: https://eng-arab-convertor.000webhostapp.com/
